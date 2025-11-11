@@ -1,0 +1,10 @@
+const purchaseTotal = 10650;
+let discountPct = 0;
+if (purchaseTotal >= 10000) discountPct = 25;
+else if (purchaseTotal >= 5000) discountPct = 15;
+else if (purchaseTotal >= 2000) discountPct = 5;
+const discounted = Math.round(purchaseTotal * (1 - discountPct / 100));
+console.log(
+  "Q6:",
+  Original: ₹${purchaseTotal}, Discount: ${discountPct}%, Final: ₹${discounted}
+);
