@@ -1,0 +1,20 @@
+const a = Math.floor(Math.random() * 20) + 1;
+const b = Math.floor(Math.random() * 20) + 1;
+const ops = ["+", "-", "*", "/"];
+const op = ops[Math.floor(Math.random() * ops.length)];
+let answer;
+switch (op) {
+  case "+":
+    answer = a + b;
+    break;
+  case "-":
+    answer = a - b;
+    break;
+  case "*":
+    answer = a * b;
+    break;
+  case "/":
+    answer = (a / b).toFixed(2);
+    break;
+}
+console.log("Q9:", Question: ${a} ${op} ${b} = ? | Answer: ${answer});
