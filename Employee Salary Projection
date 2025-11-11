@@ -1,0 +1,9 @@
+let currentSalary = 550000;
+const annualIncrementRate = 8;
+const rows = [];
+for (let year = 1; year <= 5; year++) {
+  currentSalary += (currentSalary * annualIncrementRate) / 100;
+  rows.push({ Year: year, Salary: Math.round(currentSalary) });
+}
+console.log("Q8:");
+console.table(rows);
