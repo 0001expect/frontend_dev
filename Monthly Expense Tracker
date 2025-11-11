@@ -1,0 +1,12 @@
+const expenses = [
+  ["food", 8500],
+  ["travel", 2200],
+  ["rent", 15000],
+  ["bills", 3200],
+  ["leisure", 1800],
+];
+const total = expenses.reduce((sum, [, amt]) => sum + amt, 0);
+const average = total / expenses.length;
+let totalWithTax = total;
+totalWithTax += totalWithTax * 0.10;
+console.log(
