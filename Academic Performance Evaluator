@@ -1,0 +1,14 @@
+const marks = [88, 92, 79, 85, 90];
+const anyBelow35 = marks.some(m => m < 35);
+const sumMarks = marks.reduce((a, b) => a + b, 0);
+const avgMarks = sumMarks / marks.length;
+const percentage = (sumMarks / (marks.length * 100)) * 100;
+let status;
+if (anyBelow35) status = "Detained";
+else if (percentage >= 85) status = "Promoted with Distinction";
+else if (percentage >= 50) status = "Promoted";
+else status = "Detained";
+console.log(
+  "Q4:",
+  Average: ${avgMarks.toFixed(2)}, Percentage: ${percentage.toFixed(2)}%, Status: ${status}
+);
