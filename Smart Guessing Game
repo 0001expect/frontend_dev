@@ -1,0 +1,12 @@
+const secret = Math.floor(Math.random() * 50) + 1;
+const userGuess = 7;
+let guessMsg;
+if (userGuess === secret) {
+  guessMsg = "Correct guess!";
+} else {
+  const diff = Math.abs(userGuess - secret);
+  if (diff <= 3) guessMsg = "Very close!";
+  else if (userGuess > secret) guessMsg = "Too high";
+  else guessMsg = "Too low";
+}
+console.log("Q7:", Secret=${secret}, Guess=${userGuess} → ${guessMsg});
